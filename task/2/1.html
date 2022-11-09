@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web page</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: operator mono;
+		}
+		header{
+			height: 100vh;
+			width: 100%;
+			border: 1px solid black;
+			background-image: url(01.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		nav{
+			height: 60px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: 0px 40px;
+			align-items: center;
+			color: white
+
+		}
+		nav .menu
+		{
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		nav .menu li a{
+			text-decoration: none;
+			color: white;
+			margin: 0px 5px;
+			padding: 10px 15px;
+			transition: 0.5s;
+		}
+		nav .menu li a:hover{
+			background-color: white;
+			color: black;
+
+		}
+		nav .menu li .active{
+					background-color: white;
+			color: black;
+
+		}
+		.header-body{
+			width: 100%;
+			height: calc(100vh-60px);
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			margin-top: 220px;
+			flex-direction: column;
+			color: white;
+		}
+		.header-body .h-tit{
+			font-size: 65px;
+			margin-bottom: 40px
+		}
+		.header-body .btn{
+			margin-top: 30px
+		}
+		.header-body .btn button{
+			border: 1px solid white;
+			padding: 10px 18px;
+			background-color: transparent;
+			color: white;
+			margin: 10px;
+			transition: 0.5s;
+			font-size: 20px
+
+		}
+		.header-body .btn button:hover{
+			background-color: white;
+			color: black;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+		<header>
+			<nav>
+				<h1 class="title">KRISHNA CREATIONS</h1>
+				<ul class="menu">
+					<li><a href="" class="active">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SERVICES</a></li>
+					<li><a href="">GALLERY</a></li>
+					<li><a href="">CONTACT</a></li>
+					
+				</ul>
+			</nav>
+			<div class="header-body">
+				<h1 class="h-tit">KRISHNA CREATIONS</h1>
+				<P>KRISHNA CREATIONS IS THE BEST CREATIONS OF IT COMPANY</P>
+				<div class="btn">
+					<button>watch videoes</button>
+					<button>lern more</button>
+				</div>
+			</div>
+		</header>
+</body>
+</html>

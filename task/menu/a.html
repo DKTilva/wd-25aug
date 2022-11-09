@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+	<style type="text/css">
+		nav{
+			width: 100%
+			border: 1px solid black;
+		}
+		nav ul{
+			display: flex;
+			padding: 25px;
+		}
+		nav ul li{
+			display: block;
+			padding: 25px;
+		}
+		nav ul li a{
+			text-decoration:none; 
+		}
+		.btn{
+			display: none;
+		}
+		.main:hover .btn{
+			display: block;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+		<nav>
+			<ul>
+				<li><a href="">home</a></li>
+				<li class="main"><a href="">sevices</a>
+				<ul class="btn">
+					<a href="">online</a>
+					<a href="">offline</a>
+					
+				</ul>
+				<li><a href="">about</a></li>
+				<li><a href="">gallary</a></li>
+			</ul>
+		</nav>
+</body>
+</html>
