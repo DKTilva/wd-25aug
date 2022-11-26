@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>top</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0PX;
+			padding: 0PX;
+			box-sizing: border-box;
+		}
+		header{
+			height: 150px;
+			width: 100%;
+		}
+		body{
+			height: 100vh;
+			width: 100%;
+			background-image: url(bg.jpg);
+			background-size: cover;
+/*			background-position: center;*/
+		}
+		.logo{
+			height: 150px;
+			width: 15%;
+			float: left;
+		}
+		.logo img{
+			height: 100%;
+			width: 100%;
+		}
+		nav{
+			height: 150px;
+/*			border: 1px solid black;*/
+			float:right;
+		}
+		nav ul{
+			display: flex;
+			float: left;
+		}
+		nav ul li{
+			display: inline-block;
+			padding: 20px;
+			font-size: 25px;
+			font-weight: bold;
+			margin-top: 70px;
+			color: whitesmoke;
+			cursor: pointer;
+		}
+		.fa{
+			display: none;
+			color: white;
+		}
+		nav li:hover{
+			color: yellow;
+		}
+		@media(max-width: 480px){
+			nav{
+				position: absolute;
+				right: 40px;
+				top: -100px;
+				transition: 2s;
+			}
+			nav ul li{
+				font-size: 17px;
+				margin-right: 15px;
+				padding: 0px;
+			}
+			#start{
+				display: block;
+				right: 10px;
+				top: 20px;
+				position: absolute;
+
+			}
+			#close{
+				display: block;
+				right: 10px;
+				top: 90px;
+				position: absolute;
+
+			}
+		}
+	</style>
+</head>
+<body>
+			<header>
+				<div class="logo">
+					<img src="logo.png">
+				</div>
+				<i class="fa fa-bars" id="start" onclick="show()"></i>
+			<nav id="menu">
+				<ul>
+					<li>HOME</li>
+					<li>ABOUT</li>
+					<li>CONTACT</li>
+					<li>SERVICES</li>
+				</ul>
+			</nav>
+			<i class="fa fa-close" id="close" onclick="hide()"></i>	
+			</header>
+</body>
+
+			<script type="text/javascript">
+				
+				function show(){
+					document.getElementById('menu').style.top="0";
+				} 
+				function hide(){
+					document.getElementById("menu").style.top="-100px"
+				}
+
+
+
+
+
+
+
+			</script>
+
+
+
+
+
+
+
+
+
+
+</html>

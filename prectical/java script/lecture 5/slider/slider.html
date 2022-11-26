@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slider</title>
+</head>
+<body>
+				<div>
+					<img src="i1.jpg" class="i1" width="100%" height="640px" >
+					<img src="i2.jpg" class="i1" width="100%" height="640px" >
+					<img src="i3.jpg" class="i1" width="100%" height="640px" >
+					<img src="i4.jpg" class="i1" width="100%" height="640px" >
+					<img src="i5.jpg" class="i1" width="100%" height="640px" >
+					<img src="i6.jpg" class="i1" width="100%" height="640px" >
+					<img src="i7.jpg" class="i1" width="100%" height="640px" >
+				</div>
+</body>
+
+				<script type="text/javascript">
+					counter=0;
+					function slider(){
+					var array=document.getElementsByClassName('i1');
+
+					for (var d=0; d<array.length; d++)
+					{
+						array[d].style.display="none"
+					}
+
+					if(counter == array.length)
+
+					{
+						counter=0;
+					}
+
+					array[counter].style.display="block";
+					counter++;
+					setTimeout(slider,2000)	
+				}
+					slider();
+				</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
